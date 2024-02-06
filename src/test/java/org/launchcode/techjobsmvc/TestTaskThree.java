@@ -74,7 +74,7 @@ public class TestTaskThree {
         Method displaySearchResultsMethod = searchControllerClass.getMethod("displaySearchResults", Model.class, String.class, String.class);
         Parameter[] parameters = displaySearchResultsMethod.getParameters();
         assertEquals("searchType", parameters[1].getName());
-        assertEquals("value", parameters[2].getName());
+        assertEquals("searchTerm", parameters[2].getName());
     }
 
     /*
